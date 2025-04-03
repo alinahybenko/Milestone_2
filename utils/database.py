@@ -27,6 +27,8 @@ def add_book(name, author):
     connection.commit()
     connection.close()
 
+    return True
+
 
 def get_all_books():
     connection = sqlite3.connect('data.db')
